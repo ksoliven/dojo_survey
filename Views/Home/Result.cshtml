@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .wrapper{
+        margin-left: 500px;
+        text-align: center;
+        align-content: center;
+        height: 500px;
+        width: 500px;
+    }
+    .middle_wrapper{
+            text-align: center;
+            align-content: center;
+        }
+</style>
+</head>
+<body>
+    <div class = wrapper>
+    <div class = "middle_wrapper">
+        <h3>Your submitted info:</h3>
+        <br>
+        <br>
+        <h3>Name:</h3>
+        <br>
+        <h4>@ViewBag.name</h4>
+        <br>
+        <br>
+        <h3>Location:</h3>
+        <br>
+        <h4>@ViewBag.dojo</h4>
+        <br>
+        <br>
+        <h3>Favorite Language:</h3>
+        <br>
+        <h4>@ViewBag.lang</h4>
+        <br>
+        <br>
+        <h3>Comments:</h3>
+        <br>
+        <h4>@ViewBag.comment</h4>
+        <br>
+        <button class="btn btn-dark"><a href="/">Go Back</button></a>
+    </div>
+    </div>
+</body>
+</html>

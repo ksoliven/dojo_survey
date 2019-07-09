@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dojo Survey</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .wrapper{
+        margin-left: 500px;
+        text-align: center;
+        align-content: center;
+        height: 500px;
+        width: 500px;
+    }
+    .middle_wrapper{
+            text-align: center;
+            align-content: center;
+        }
+</style>
+</head>
+<body>
+    <div class = wrapper>
+    <div class = "middle_wrapper">
+        <form action="Result" method="post">
+            <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" class="form-control" name="name" placeholder="Enter your name.">
+            </div>
+            <br>
+            <div class="form-group">
+            <label for="dojo">Dojo Location:</label>
+                <select name = "dojo">
+                    <option value="San Jose">San Jose</option>
+                    <option value="Seattle">Seattle</option>
+                    <option value="Dallas">Dallas</option>
+                    <option value="Washington DC">Washington, DC</option>
+                </select>
+                </div>
+                <br>
+            <div class="form-group">
+            <label for="lang" id="lang">Favorite Language:</label>
+                <select name ="lang">
+                    <option value="C#">C#</option>
+                    <option value="Java">Java</option>
+                    <option value="Python">Python</option>
+                    <option value="Lua">Lua</option>
+                </select>
+                </div>
+                <br>
+            <div class="form-group">
+            <label for="comment" >Comments (optional):&nbsp;</label>
+
+            <textarea name="comment">
+            </textarea>
+            </div>            
+            <button type="submit" class="btn btn-dark">Submit</button>
+            </form>
+    </div>
+    </div>
+</body>
+</html>
